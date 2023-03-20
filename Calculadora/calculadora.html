@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="calculadora.css">
+  </head>
+  <body>
+    <div class="calculadora">
+      <form>
+        <input type="text" name="resultado" id="resultado" disabled>
+        <br>
+        <input type="button" value="1" onclick="adicionarNumero('1')">
+        <input type="button" value="2" onclick="adicionarNumero('2')">
+        <input type="button" value="3" onclick="adicionarNumero('3')">
+        <input type="button" value="+" onclick="adicionarOperador('+')">
+        <br>
+        <input type="button" value="4" onclick="adicionarNumero('4')">
+        <input type="button" value="5" onclick="adicionarNumero('5')">
+        <input type="button" value="6" onclick="adicionarNumero('6')">
+        <input type="button" value="-" onclick="adicionarOperador('-')">
+        <br>
+        <input type="button" value="7" onclick="adicionarNumero('7')">
+        <input type="button" value="8" onclick="adicionarNumero('8')">
+        <input type="button" value="9" onclick="adicionarNumero('9')">
+        <input type="button" value="*" onclick="adicionarOperador('*')">
+        <br>
+        <input type="button" value="0" onclick="adicionarNumero('0')">
+        <input type="button" value="C" onclick="limpar()">
+        <input type="button" value="=" onclick="calcular()">
+        <input type="button" value="/" onclick="adicionarOperador('/')">
+      </form>
+    </div>
+
+    <script src="calculadora.js"></script>
+  </body>
+</html>
